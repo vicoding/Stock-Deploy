@@ -1,0 +1,24 @@
+
+NAME
+        Stock-Deploy.sh - Wrapper script for ceph-deploy
+
+SYNOPSIS
+        A simple script to deploy stock Ceph cluster.
+
+USAGE
+	Stock-Deploy.sh [OPTION]
+	Stock-Deploy.sh -d {-o [osd_num] | --osd [osd_num]}
+
+OPTIONS:
+	-d, --deploy
+		deploy ceph cluster
+	-p, --purge
+		purge ceph cluster
+	-s, --startup
+		start up ceph service
+	-c, --conf
+		use custom configuration to overwrite /etc/ceph/ceph.conf
+	-b, --bench
+		benchmark ceph write & read performance
+	-h, --help
+		help
